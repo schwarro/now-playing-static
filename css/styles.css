@@ -227,7 +227,7 @@ figure {
   z-index: 200;
   top: 0;
   left: 0;
-  margin-left: 5px;
+  text-align: center;
 }
 
 /*Film overviews visible  */
@@ -258,6 +258,48 @@ figure {
 
 @media screen and (min-width: 992px) {
 /*Posters show for all minus first one  */
+
+  .movie-poster {
+    display: block;
+  }
+
+  .movie-backdrop {
+    display: none
+  }
+
+  .movie:first-child .movie-backdrop {
+    display: block;
+  }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+
 /*Moive overviews except first one  */
-/*movies should be in grid expcet first one  */
+
+  .movie-overview {
+    display: none;
+  }
+
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+
+/*movies should be in grid except first one  */
+
+
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .movie:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .site-logo {
+    margin-left: 12px;
+  }
 }
