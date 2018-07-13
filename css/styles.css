@@ -197,9 +197,67 @@ figure {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+/*Nav bar fixed and to the left  */
+  .site-nav-item {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+  }
 
+  .site-nav {
+    top: 0;
+    width: 10%;
+  }
+
+  .site-nav-list {
+    margin-top: 100px;
+  }
+
+  .movie {
+    left: 10%;
+    width: 90%;
+  }
+
+/*Logo in sidebar  */
+
+.site-logo {
+  z-index: 200;
+  top: 0;
+  left: 0;
+  margin-left: 5px;
+}
+
+/*Film overviews visible  */
+  .movie-overview {
+    display: block;
+  }
+/*Footer side by side  */
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    margin-left: 10%;
+  }
+
+  .footer-nav {
+    left: 10%;
+    width: 90%;
+  }
+
+  .about {
+    background-color: black;
+    color: white;
+    left: 10%;
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 992px) {
-
+/*Posters show for all minus first one  */
+/*Moive overviews except first one  */
+/*movies should be in grid expcet first one  */
 }
