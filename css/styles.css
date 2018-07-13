@@ -210,15 +210,17 @@ figure {
   .site-nav {
     top: 0;
     width: 10%;
+    display: inline-block;
+    position: fixed;
   }
 
   .site-nav-list {
     margin-top: 100px;
   }
 
-  .movie {
-    left: 10%;
-    width: 90%;
+  main {
+    margin-left: 10%;
+    max-width: 100%;
   }
 
 /*Logo in sidebar  */
@@ -261,6 +263,7 @@ figure {
 
   .movie-poster {
     display: block;
+    width: 100%;
   }
 
   .movie-backdrop {
@@ -300,6 +303,6 @@ figure {
   }
 
   .site-logo {
-    margin-left: 12px;
+    margin-left: 25px;
   }
 }
